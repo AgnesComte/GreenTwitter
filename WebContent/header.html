@@ -1,0 +1,40 @@
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">Twitter</a>
+
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-main">
+
+			<form id="query2" class="navbar-form navbar-left" method="get"
+				action="javascript:(function(){return;})()" onsubmit="javascript:rechercheGlobale(query);">
+				<input type="text" class="form-control col-lg-8"
+					placeholder="Search" name=query>
+				<button type="submit" class="btn btn-primary">Search</button>
+			</form>
+
+			<label id="box-friends-label"></label>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li id="signUpLi" class="signDiv"><a href="signup.jsp">Sign	Up</a></li>
+				<li id="loginLi" class="signDiv"><a id="login"
+					href="signin.jsp">Log In</a></li>
+				<li id="logoutLi" class="signDiv"><a
+					href="javascript:disconnect();">Log Out</a></li>
+				<li><a href="http://docs.comtejankovic.apiary.io"
+					target="_blank">API</a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+<script type="text/javascript" src="./js/library/jquery_1_11_0.min.js"></script>
+<script type="text/javascript" src="./js/library/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/docs.min.js"></script>
+<script type="text/javascript" src="./js/connection.js"></script>
+
+<script type="text/javascript">
+	updateDivConnection();
+</script>
